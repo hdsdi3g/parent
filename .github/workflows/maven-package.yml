@@ -24,7 +24,7 @@ jobs:
       run: git fetch --unshallow
     - name: Build parent with Maven
       run: >-
-        mvn -B package verify sonar:sonar
+        mvn -B package install verify sonar:sonar
         -Dgpg.skip=true
         -Dmaven.javadoc.skip=true
         -Dmaven.source.skip=true

@@ -5,7 +5,7 @@
 	<groupId>tv.hd3g.commons</groupId>
 	<artifactId>parent</artifactId>
 	<packaging>pom</packaging>
-	<version>2.1.7.RELEASE-8-SNAPSHOT</version>
+	<version>2.1.7.RELEASE-8</version>
 
 	<name>Commons SpringBoot Parent</name>
 	<url>https://github.com/hdsdi3g/commons</url>

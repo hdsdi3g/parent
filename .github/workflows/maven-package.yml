@@ -37,18 +37,3 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-    - name: Build parent-persistence with Maven
-      run: >-
-        mvn -B package verify sonar:sonar
-        -Dgpg.skip=true
-        -Dmaven.javadoc.skip=true
-        -Dmaven.source.skip=true
-        -Dsonar.projectKey=hdsdi3g_parent
-        -Dsonar.organization=hdsdi3g
-        -Dsonar.host.url=https://sonarcloud.io
-        -Dsonar.login=$SONAR_TOKEN
-        -Dsonar.java.source=11
-        --file persistence/pom.xml
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

@@ -22,6 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.release>11</maven.compiler.release>
 		<java.version>11</java.version>
+		<mockito.version>3.6.28</mockito.version>
 	</properties>
 
 	<organization>
